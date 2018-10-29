@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.menus {
+  margin: auto;
+  margin-left: 12px;
+  margin-top: 50px;
+  float: left;
+  list-style: none;
+}
+
+.menuItem {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  /* font-weight: bold; */
+}
+
+.menus .list-items {
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 50px;
+  font-family: Helvetica;
+}
+
+.martian {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  height: 850px;
+}
+body {
+  margin: 0;
+}
+.block-on-right {
+  float: right;
+  font-family: Helvetica;
+  width: 300px;
+  height: 150px;
+  font-size: 12px;
+  background-color: rgb(44, 37, 37);
+  text-align: center;
+  color: white;
+  margin-top: 270px;
+  margin-right: 10px;
+}
+#rt {
+  margin-left: 15px;
+}
+.rt-imdb {
+  margin-left: 50px;
+}
+.textBlock {
+  margin-top: 400px;
+  margin-left: 80px;
+  color: white;
+}
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 5px 0 5px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-flex;
+}
+
+.btn-nav {
+  max-width: 30px;
+  max-height: 30px;
+  margin-top: 15px;
+  margin-right: 40%;
+  opacity: 0.2;
+  float: left;
+}
+
+.description {
+  margin-left: 60px;
+  margin-top: 0;
+  width: 500px;
+  height: 120px;
+  font-size: 16px;
+  font-family: Helvetica;
+  font-weight: 400;
+  text-align: left;
+}
+
+input,
+input:focus,
+input:active {
+  background: transparent;
+  border: 0;
+  border-style: none;
+  border-color: transparent;
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+  height: 40px;
+  width: 400px;
+  margin-top: 2%;
+  padding-top: 2%;
+}
+
+::placeholder {
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: Helvetica;
+}
+
+footer {
+  font-size: 12px;
+  font-family: Helvetica;
+  padding: 5px;
+
+  /* bottom: 100px; */
+  background-color: black;
+  width: 100%;
+  height: 40%;
+  color: white;
+  float: left;
+}
+.info1 {
+  float: left;
+  width: 20%;
+  height: 150px;
+  margin-top: 5%;
+}
+.info2 {
+  margin-left: 10%;
+  float: left;
+  width: 30%;
+  margin-top: 5%;
+  height: 150px;
+}
+.top-list {
+  height: 100px;
+}
+.films img {
+  align-items: center;
+  width: 24%;
+  height: 450px;
+  object-fit: cover;
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.active {
+  font-weight: bold;
+}
+.films img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#btn-top {
+  position: relative;
+  left: 430px;
+  bottom: 200px;
+}
+.films {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+#arrbot {
+  position: relative;
+  left: 15px;
+  width: 25px;
+  height: 15px;
+}
+footer a img {
+  margin: 2px;
+  width: 60px;
+  height: 60px;
+}
+.logos {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.ratings {
+  margin-top: -10%;
+  margin-left: 80%;
+}
+.button1 {
+  background-color: rgba(226, 155, 21, 0.7);
+}
+.button2 {
+  background-color: rgba(206, 66, 10, 0.7);
+}
+.button {
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.arrow {
+  height: 60px;
+  width: 60px;
+  /*display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  font-size: 20px;
+  font-size-adjust: auto;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af5d9 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+}
+
+.list {
+  float: left;
+  margin-left: 5%;
+  width: 90%;
+  position: relative;
+  bottom: 100px;
+  background-color: white;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#all-categories {
+  float: right;
+  padding: 10px 30px;
+}
+#backgroundimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  height: 850px;
+  position: absolute;
+  z-index: -1;
+}
+#search {
+  align-self: center;
+}
+#searchContainer {
+  background-color: #00000088;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 20;
+  padding-bottom: 20;
+  margin-top: 0px;
+}

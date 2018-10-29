@@ -1,0 +1,239 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+.text {
+  font-size: 50px;
+  /* text-align: center; */
+  font-weight: bold;
+  /* position: relative; */
+  /* top: 200px;  */
+  margin-left: 8%;
+  margin-top: 4%;
+}
+.cardContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.card {
+  width: 700px;
+  height: 500px;
+  margin-top: 75px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card1 {
+  width: 400px;
+  height: 500px;
+  float: right;
+  position: relative;
+  white-space: nowrap;
+  display: inline-flex;
+  margin-top: -43.5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.poster {
+  width: 35%;
+  height: 75%;
+  margin: 8% 3%;
+}
+.cardContent {
+  margin-top: -450px;
+  margin-left: 45%;
+}
+.reviewBox {
+  width: 95%;
+  background-color: white;
+  border-radius: 0px;
+  border: none;
+  margin-right: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0px 0px 0 rgba(0, 0, 0, 0.09);
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 20px;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  font-size: 2em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "★";
+}
+
+.rating > .half:before {
+  content: "★";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+textarea {
+  width: 280px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.submitContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  left: 300px;
+  top: -60px;
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  font-size-adjust: auto;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 73%);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding-right: 6px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+  font-size: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 12px;
+}
+
+.first {
+  margin-top: 30px;
+}
+.labels {
+  margin-left: 10px;
+}
+.inp {
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.04);
+  padding-left: 5%;
+}
+::placeholder {
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 16px;
+}
+header {
+  width: 100%;
+  height: 50px;
+
+  /* margin-top: 1%;
+      margin-bottom: 1%; */
+  padding: 15px 0 5px 5px;
+}
+
+.btn-nav {
+  margin-left: 10px;
+  float: left;
+  width: 45px;
+  height: 40px;
+}
+
+footer {
+  margin-top: 25px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px;
+  background-color: black;
+  width: 100%;
+  height: 40%;
+  color: white;
+  float: left;
+}
+.search {
+  opacity: 0.5;
+  height: 40px;
+  margin-left: 25%;
+  background-color: rgb(224, 214, 214);
+}
+.info1 {
+  float: left;
+  width: 20%;
+  height: 150px;
+  margin-top: 5%;
+}
+.info2 {
+  margin-left: 10%;
+  float: left;
+  width: 30%;
+  margin-top: 5%;
+  height: 150px;
+}
+footer img {
+  width: 45px;
+  height: 40px;
+}
+.logos {
+  float: right;
+  margin-top: 5%;
+
+  /* margin-right: 10px; */
+}
+.arrow {
+  height: 60px;
+  width: 60px;
+  opacity: 0.7;
+  /*display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  font-size: 20px;
+  font-size-adjust: auto;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af5d9 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+}

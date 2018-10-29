@@ -1,0 +1,230 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.thor {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  height: 850px;
+}
+body {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 5px 0 5px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-flex;
+}
+
+.btn-nav {
+  max-width: 30px;
+  max-height: 30px;
+  margin-top: 15px;
+  margin-right: 430px;
+  opacity: 0.2;
+  float: left;
+}
+
+.inp {
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+::placeholder {
+  color: #bdbdbd;
+  font-weight: 300;
+}
+
+footer {
+  font-size: 12px;
+  padding: 5px;
+
+  /* bottom: 100px; */
+  background-color: black;
+  width: 100%;
+  height: 40%;
+  color: white;
+  float: left;
+}
+.info1 {
+  float: left;
+  width: 20%;
+  height: 150px;
+  margin-top: 5%;
+}
+.info2 {
+  margin-left: 10%;
+  float: left;
+  width: 30%;
+  margin-top: 5%;
+  height: 150px;
+}
+.top-list {
+  height: 100px;
+}
+
+#btn-top {
+  position: relative;
+  left: 430px;
+  bottom: 200px;
+}
+.films {
+  background-color: white;
+  margin: 10px 10px;
+}
+
+#arrbot {
+  position: relative;
+  left: 15px;
+  width: 25px;
+  height: 15px;
+}
+footer a img {
+  margin: 2px;
+  width: 60px;
+  height: 60px;
+}
+.logos {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.info {
+  margin-top: 30%;
+}
+.button1 {
+  background-color: rgba(226, 155, 21, 0.7);
+}
+.button2 {
+  background-color: rgba(206, 66, 10, 0.7);
+}
+.buttonDefault {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.buttonTitle {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 450px !important;
+  margin-left: 0 !important;
+  display: grid !important;
+  font-size: 42px !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+
+}
+.button {
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: Helvetica;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.tag {
+  padding-left: 8px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.summary {
+  text-align: justify;
+  width: 800px;
+  font-size: 16px;
+  font-family: monospace;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.tagBlock {
+  padding-left: 100px;
+  padding-top: 70px;
+  display: block;
+}
+.circle {
+  height: 50px;
+  width: 250px;
+  margin-top: -20px;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  opacity: 0.77;
+}
+.text_shape {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Helvetica;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5px;
+}
+.video {
+  margin-top: 70px;
+  margin-left: 3%;
+}
+.movies {
+  margin-top: 70px;
+  margin-left: 10%;
+  width: 100%;
+}
+.arrow {
+  height: 60px;
+  width: 60px;
+  /*display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  font-size: 20px;
+  font-size-adjust: auto;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af5d9 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 100px; /* Rounded corners */
+}
+
+.list {
+  float: left;
+  margin-left: 0;
+  width: 90%;
+  position: relative;
+  background-color: white;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#all-categories {
+  float: right;
+  padding: 10px 30px;
+}
+#backgroundimage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  height: 850px;
+  position: absolute;
+  z-index: -1;
+}
