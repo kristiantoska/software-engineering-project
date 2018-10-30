@@ -4,12 +4,18 @@ import MainPage from "./MainPage/MainPage";
 import Review from "./Review/Review";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
 
-import reducers from "../reducers";
+import store from "./store";
+import setAuthToken from "../utils/setAuthToken";
+if (localStorage.jwtToken) {
+  // Set auth token header auth
+  setAuthToken(localStorage.jwtToken);
+  // Decode token
 
-let store = createStore(reducers);
+  // Set user
 
+  // Check for expired token
+}
 class App extends Component {
   render() {
     return (

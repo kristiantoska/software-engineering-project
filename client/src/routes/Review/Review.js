@@ -172,7 +172,7 @@ class Review extends Component {
 }
 
 const mapStateToProps = state => ({
-  selectedMovie: state.selectedMovie
+  selectedMovie: state.movie.selectedMovie
 });
 
 export default connect(mapStateToProps)(Review);
